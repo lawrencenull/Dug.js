@@ -111,7 +111,6 @@ var dug = function( opts ){
 				url = render(options.endpoint),
 				scriptInBody = script.parentNode.nodeName != 'head';
 				dug[callkey] = function(json,cached){
-					json = json.results? json.results : json;
 					if( cached !== true ){
 						cache(url,json);
 					}
